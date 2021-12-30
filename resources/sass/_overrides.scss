@@ -1,0 +1,32 @@
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: $success
+}
+.btn.btn-b.btn-danger {
+    background-color: $danger;
+    color: $white
+}
+.list-unstyled {
+    padding-left: 0;
+}
+.box-collapse .title-box-d {
+    right: initial;
+    // left: 60px;
+}
+.right-boxed {
+    right: 5rem !important;
+    left: initial;
+}
+.title-box-d .title-d:after {
+    right: initial;
+    left: 0;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    display: none;
+}
+.intro-single .title-single-box {
+    border-right: none;
+    border-left: 3px solid #2eca6a
+}
+.intro-single .title-single-box {
+    padding: 1rem 0 1rem 2rem;
+}

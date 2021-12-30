@@ -1,0 +1,119 @@
+.navbar-brand {
+    width: 200px;
+}
+
+.carousel-image {
+    flex: 1;
+}
+
+#main-carousel {
+    height: 768px;
+    // width:100%;
+}
+.carousel-inner,
+.carousel-item {
+    height: 100%;
+}
+#admin-dashboard {
+    margin-left: 100px;
+}
+
+footer {
+    .list-inline-item {
+        margin: 0 15px;
+        a {
+            color: gray;
+            i {
+                transition: 0.3s ease-in-out;
+            }
+            &:hover {
+                .fa-facebook {
+                    color: $facebook;
+                }
+                .fa-twitter {
+                    color: $twitter;
+                }
+                .fa-instagram {
+                    color: $instagram;
+                }
+                .fa-whatsapp {
+                    color: $whatsapp;
+                }
+            }
+        }
+    }
+}
+
+.page-item {
+    &.active {
+        .page-link {
+            color: white;
+        }
+    }
+}
+
+.img-box-a {
+    margin: auto;
+    position: relative;
+    height: 300px;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 500px !important;
+        height: 500px;
+        margin-top: -250px;
+        margin-left: -250px;
+    }
+}
+
+.language-button {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .navbar-buttons {
+        margin: 10px 0;
+    }
+}
+@media (min-width: 992px) {
+    .navbar-buttons {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+}
+
+.comment-item {
+    .username {
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+#like-house {
+    cursor: pointer;
+}
+
+.fa-heart-o.liked {
+    color: red;
+}
+.offerType {
+    position: absolute;
+    z-index: 31;
+    background: $success;
+    padding: 0px 25px;
+    border-radius: 5px;
+    left: 15px;
+    top: 15px;
+    color: white;
+}
+
+.boolean-container {
+    padding: 40px 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}

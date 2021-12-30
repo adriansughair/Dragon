@@ -1,0 +1,60 @@
+.sidenav {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $black;
+    transition: 0.5s;
+    a {
+        text-decoration: none;
+        white-space: nowrap;
+        font-size: 18px;
+        color: $white;
+        display: block;
+        transition: 0.3s;
+        position: relative;
+        &:hover {
+            color: #f1f1f1;
+            background-color: $river_bed;
+        }
+        .popup {
+            display: none;
+            position: absolute;
+            z-index: 10;
+            background-color: $white;
+            border: 1px solid $black;
+            border-radius: 5px;
+            color: $black;
+            top: 0;
+            left: 20
+        }
+    }
+    &.hide {
+        a {
+            span {
+                display: none
+            }
+            .popup {
+                display: block
+            }
+        }
+    }
+    .w-100px {
+        width: 100px;
+    }
+    .sidemenu-toggler {
+        color: $white;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}

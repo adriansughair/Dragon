@@ -1,0 +1,47 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+@import "colors";
+
+@import "general";
+
+@import "overrides";
+
+@import "sidemenu";
+
+@import "forms";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    direction: ltr;
+    text-align: left;
+}
+
+.owl-stage-outer {
+    direction: ltr;
+}
+
+.owl-arrow .owl-nav {
+    left: initial;
+    right: 0 !important;
+    display: flex;
+    flex-direction: row;
+}
+
+html[lang="ar"] {
+    body {
+        font-family: "Almarai", sans-serif;
+    }
+    .owl-stage-outer {
+        direction: rtl;
+    }
+    .owl-arrow .owl-nav {
+        flex-direction: row-reverse;
+    }
+}
